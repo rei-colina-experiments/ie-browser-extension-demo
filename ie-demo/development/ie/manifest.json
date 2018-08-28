@@ -1,0 +1,22 @@
+{
+    "name": "ie-test",
+    "author": "None",
+    "version": "0.1",
+    "description": "An empty app created by default",
+    "uuid": "7072e104765748d9bf45067ac605916b",
+    "permissions": ["http://*/*", "https://*/*", "https://github.com/"],
+    "background_page": "forge.html",
+    "content_scripts": [  
+        {
+            "matches": ["https://github.com/"]
+			, "exclude_matches": []
+            , "js": ["forge/app_config.js", "forge/all.js", "src/js/content.js"]
+            , "css": []
+            , "run_at": "document_end"
+            , "all_frames": true
+
+        }
+    ]
+    ,
+    "logging":{"level": "DEBUG"} 
+}

@@ -1,0 +1,37 @@
+{
+	"config_version": "2",
+	"name": "ie-demo",
+	"author": "None",
+	"version": "0.1",
+	"platform_version": "v1.4",
+	"description": "An empty app created by default",
+	"modules": {
+		"background": {
+			"files": [
+				"js/background.js"
+			]
+		},
+        "activations": [
+            {
+                "patterns": ["https://github.com/"],
+                "scripts": ["js/content.js"],
+                "styles": [],
+                "run_at": "ready",
+                "all_frames": true
+            }
+        ],
+		"logging": {
+			"level": "DEBUG"
+		},
+		"contact": true,
+		"file": true,
+		"is": true,
+		"media": true,
+		"prefs": true,
+		"request": {
+			"permissions": ["http://*/*", "https://*/*"]
+		},
+		"tools": true,
+		"reload": true
+	}
+}
