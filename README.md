@@ -9,6 +9,8 @@ A sample browser extension for Internet Explorer
 5. `forge-extension build ie`
 6. `forge-extension package ie`
 7. Use the installer built in `ie-demo/release/ie/` to install the extension in your Internet Explorer.
+6. After installing the extension, if you open Internet Explorer, you will get an `alert` dialog saying that the **background script** is working.
+7. If you navigate to https://www.github.com/ using Internet Explorer, you will get an `alert` dialog saying that the **content script** is working.
 
 ## How the extension works
 The Trigger Corp browser extension framework allows you to build extensions for different platforms with just Javascript and configuration files. The idea of an extension is to "Inject" scripts into web pages. There are two different ways to inject those scripts:
