@@ -11,10 +11,10 @@ A sample browser extension for Internet Explorer
 7. Use the installer built in `ie-demo/release/ie/` to install the extension in your Internet Explorer.
 
 ## How the extension works
-The Trigger Corp browser extension framework allows you to build extensions for different platform with just Javascript and configuration files. The idea of an extension is to "Inject" scripts into web pages. There are two different types to inject those scripts:
+The Trigger Corp browser extension framework allows you to build extensions for different platforms with just Javascript and configuration files. The idea of an extension is to "Inject" scripts into web pages. There are two different ways to inject those scripts:
 
-1. Background Scripts: If your add-on relies on long-running code which is not attached or associated with any particular web page, you should use background code.This code is loaded once when the browser is open or add-on is loaded/reloaded. It runs until the browser is closed or the add-on is removed. It is good practice to put page independent logic/functionality in the  background. To use background files, you need to use the `background` module (see: http://legacy-docs.trigger.io/en/v1.4/modules/background.html#modules-background)
+1. **Background Scripts:** If your add-on relies on long-running code which is not attached or associated with any particular web page, you should use background code.This code is loaded once when the browser is open or add-on is loaded/reloaded. It runs until the browser is closed or the add-on is removed. It is good practice to put page independent logic/functionality in the  background. To use background files, you need to use the `background` module (see: http://legacy-docs.trigger.io/en/v1.4/modules/background.html#modules-background)
 
-2. Content Scripts: If your add-on works with the individual web pages a user sees, you should use content scripts. For example, an add-on which changes a web page so that any long words are replaced with links to that word in an online dictionary. To use content scripts, you need to use the `activations` module (see: http://legacy-docs.trigger.io/en/v1.4/modules/activations.html#modules-activations)
+2. **Content Scripts:** If your add-on works with the individual web pages a user sees, you should use content scripts. For example, an add-on which changes a web page so that any long words are replaced with links to that word in an online dictionary. To use content scripts, you need to use the `activations` module (see: http://legacy-docs.trigger.io/en/v1.4/modules/activations.html#modules-activations)
 
-This sample extension implements both background scripts and content scripts. You can see the proper configuration in `ie-demo/src/config.json`
+This sample extension implements both background scripts and content scripts. **You can see the proper configuration in `ie-demo/src/config.json`**
