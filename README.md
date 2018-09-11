@@ -11,6 +11,11 @@ A sample browser extension for Internet Explorer
 7. Use the installer built in `ie-demo/release/ie/` to install the extension in your Internet Explorer.
 6. After installing the extension, if you open Internet Explorer, you will get an `alert` dialog saying that the **background script** is working.
 7. If you navigate to https://www.github.com/ using Internet Explorer, you will get an `alert` dialog saying that the **content script** is working.
+8. If you open the Developers Tools --> Console, you will see the messages between the content and the background script:
+```
+Sending message 'Hello there!' to the background script...
+Backgound script responded with: Backgound job got the message 'Hello there!', and replied back!
+```
 
 ## How the extension works
 The Trigger Corp browser extension framework allows you to build extensions for different platforms with just Javascript and configuration files. The idea of an extension is to "Inject" scripts into web pages. There are two different ways to inject those scripts:
