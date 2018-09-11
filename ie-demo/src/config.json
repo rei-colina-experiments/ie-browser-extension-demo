@@ -6,6 +6,7 @@
 	"platform_version": "v1.4",
 	"description": "An empty app created by default",
 	"modules": {
+		"message": true,
 		"background": {
 			"files": [
 				"js/background.js"
